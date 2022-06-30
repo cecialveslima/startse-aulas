@@ -1,0 +1,27 @@
+.flex-container{
+    display: flex;
+    background-color: bisque;
+    justify-content: flex-start;
+    flex-wrap: wrap; /*para ver o funcionamento comentar o @media screeen*/
+
+}
+
+.flex-container > div{
+    display: flex;
+    background-color: coral;
+    border: 2px blueviolet;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    /*width: 100px;*/
+
+}
+
+@media screen and (max-width:800px){
+    div{
+        flex-direction: column;
+    }
+    .flex-container{
+        width: 80%;
+    }
+}
